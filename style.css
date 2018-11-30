@@ -1,0 +1,92 @@
+body{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: Consolas, monospace, Arial;
+    background: black;
+}
+
+#nav{
+    z-index: 10;
+    position: fixed;
+    width: max-content;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#nav > div{
+    margin: 0 auto;
+    width: max-content;
+}
+.navbuttons, .navArrows{
+    transition: 0.2s;
+    color: white;
+    cursor: pointer;
+    background: rgba(0,0,0,0.5);
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+.sectionPage{
+    z-index: -10;
+    width: 100vw;
+    height: 100vh;
+    background: #1fc8db linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
+.active{
+    pointer-events: none;
+    cursor: not-allowed;
+    transform: translate(0,15px);
+    background: white;
+    opacity: 1;
+    color: black;
+}
+.noArrow{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.sec1{
+    background: url("img/1.png") no-repeat fixed center;
+    background-size: cover;
+}
+.sec2{
+
+    background: url("img/2.png") no-repeat fixed center;
+    background-size: cover;
+}
+.sec3{
+
+    background: url("img/3.png") no-repeat fixed center;
+    background-size: cover;
+}
+.sec4{
+
+    background: url("img/4.png") no-repeat fixed center;
+    background-size: cover;
+}
+
+.sectionPage > div{
+    text-align: center;
+    color: white;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+    border-radius: 50px;
+    width: calc(80vw + 100px);
+    height: calc(100vh - 300px);
+    margin: 0 auto;
+    position: relative;
+    bottom: -150px;
+    left: 0;
+    right: 0;
+}
+.sectionPage > div > h1{
+    text-shadow: -2px 1px 0 rgba(255, 0, 0, 0.51),2px -1px 0 rgba(0, 252, 0, 0.51),-2px -1px 0 rgba(0, 0, 255, 0.51);
+    width: max-content;
+    margin: 0 auto;
+}
+
+.sec4 > div, .sec3 > div{
+    background-image: radial-gradient(circle, rgba(0,0,0,0.6), rgba(0,0,0,0.9));
+}
